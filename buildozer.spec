@@ -5,7 +5,7 @@ package.domain = org.aile
 source.dir = .
 source.include_exts = py
 version = 1.0
-requirements = python3,kivy
+requirements = python3==3.11.6,kivy==2.3.0
 orientation = portrait
 fullscreen = 1
 
