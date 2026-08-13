@@ -30,10 +30,14 @@ jobs:
 
       - name: Buildozer kur
         run: |
-          pip install --upgrade pip
           pip install buildozer==1.5.0 cython==0.29.33
 
+      - name: Pip kisitlama dosyasi olustur
+        run: echo "pip<26" > /tmp/pip-constraint.txt
+
       - name: APK derle
+        env:
+          PIP_CONSTRAINT: /tmp/pip-constraint.txt
         run: |
           yes | buildozer -v android debug
 
