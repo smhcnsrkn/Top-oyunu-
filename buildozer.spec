@@ -16,4 +16,3 @@ warn_on_root = 1
 [app:android]
 android.permissions =
 android.archs = arm64-v8a
-p4a.branch = 2024.01.21
